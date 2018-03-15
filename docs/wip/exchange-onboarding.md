@@ -19,6 +19,7 @@ Table of Contents
       * [How do I export the CA certificate for the API?](#how-do-i-export-the-ca-certificate-for-the-api)
       * [How do I know when the wallet has fetched all the blocks?](#how-do-i-know-when-the-wallet-has-fetched-all-the-blocks)
       * [Creating a New Wallet](#creating-a-new-wallet)
+      * [Receiving Money](#receiving-money)
       * [Sending Money](#sending-money)
       * [Where can I find the API documentation?](#where-can-i-find-the-api-documentation)
       * [How can I inspect runtime metrics and statistics?](#how-can-i-inspect-runtime-metrics-and-statistics)
@@ -250,7 +251,7 @@ You have just created your first wallet. Information about this wallet can be re
          -H "Accept: application/json; charset=utf-8"              \
          --cacert ./scripts/tls-files/ca.crt                       \
 
-##Receiving Money
+## Receiving Money
 
 To receive money from other users you should provide your address. This address can be obtained from an account. Each wallet contains at least one account, you can think of account as a pocket inside of your wallet. Besides, you can view all existing accounts of a wallet by using the GET /api/v1/wallets/{{walletId}}/accounts endpoint as follow:
 
